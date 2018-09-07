@@ -1,0 +1,32 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "First app heroku with CRUD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "knex": "^0.15.2",
+    "knex-logger": "^0.1.0",
+    "method-override": "^3.0.0",
+    "pg": "^7.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diegocarrera/nodejs"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "handlebars",
+    "crud"
+  ]
+}

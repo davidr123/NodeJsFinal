@@ -1,0 +1,10 @@
+<!-- NOTA: utilice helper para simplificar el código de esta sección -->
+
+<h2>Single user page -  <a href="/user">Usuarios</a></h2>
+
+{{user.id_administrador}}, {{user.usuario}}, {{user.password}}, {{user.rol}}
+
+<a href="/user/{{user.id_administrador}}/edit" type="button" class="btn btn-default btn-warning" >
+  edit user
+</a>
+<a href ="/user"><button type="submit" class="btn btn-default success" >Menu</button></a>
