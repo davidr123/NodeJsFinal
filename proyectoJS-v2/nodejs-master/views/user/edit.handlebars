@@ -1,0 +1,13 @@
+<h2>formulario EDIT-<a href="/user">Usuarios</a></h2>
+
+<!-- NOTA: utilice helper para simplificar el código de esta sección 
+agregar method-override 
+-->
+
+<form class="form" action="/user/{{user.id}}?_method=PUT" method="post">
+  <div class="form-group">
+    <label for="title"></label>
+    <input type="text" class="form-control" id="nombre" name="nombre"  value="{{user.nombre}}">    
+  </div>
+  <button type="submit" class="btn btn-default btn-danger">Update</button>
+</form>

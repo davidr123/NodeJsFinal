@@ -1,0 +1,171 @@
+body { 
+    background-image: url(/images/wallpaper.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body.juego { 
+    margin-top: 12%;
+}
+p, td {
+    line-height: 1.5; 
+}
+ul {
+    padding: 0 0 0 20px; 
+}
+th {
+    background: #eee; 
+    white-space: nowrap; 
+}
+th, td {
+    padding: 10px; 
+    text-align: left; 
+    vertical-align: top; 
+    font-size: .9em; 
+    font-weight: normal; 
+    border-right: 1px solid #fff; 
+}
+td:first-child {
+    white-space: nowrap; 
+    color: #008000; 
+    width: 1%; 
+    font-style: italic; 
+}
+.button-lg, a {
+    margin: 5px 0;
+    padding: .65em 1.6em;
+    font-size: 105%;
+    text-decoration: none;
+}
+h1, h2, h3 { 
+    color: #4b4b4b; 
+    font-family: "Source Sans Pro", sans-serif; 
+    font-weight: 300; 
+    margin: 0 0 1.2em; 
+}
+h1 { 
+    font-size: 4.5em; 
+    color: #1f8dd6; 
+    margin: 0 0 .4em; 
+}
+h2 { 
+    font-size: 2em; 
+    color: #636363;
+}
+h3 { 
+    font-size: 1.8em; 
+    color: white; 
+    margin: 1em 0.8em;
+}
+h4 { 
+    font: bold 1em sans-serif;
+    color: #636363; 
+    margin: 4em 0 1em; 
+}
+a { 
+    color: #4e99c7; 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: underline; 
+}
+p{ 
+    margin: 0 0 1.2em; 
+}
+::selection { 
+    color: #fff; 
+    background: #328efd; 
+}
+::-moz-selection { 
+    color: #fff; 
+    background: #328efd; 
+}
+
+#puzzle-points{ 
+    text-align: center;
+    color: white;
+}
+#title{
+    color: orange; 
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 90px; 
+}
+a.btnRestart{
+    background-color:brown;
+    display: inline-block;
+    box-shadow: inset 0 -0.7em 0 -0.40em rgba(0,0,0,0.17);
+    border-radius: 3em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Short Stack', cursive;
+    padding: 0.9em 3em;
+    margin: 0 0.4em 1em 0;
+    font-weight: 400px;
+    color: whitesmoke;
+    text-align: center;
+    max-height: 300px;
+    max-width: 300px;
+}
+.game-button { 
+    background-color: #3369ff;
+    display: inline-block;
+    box-shadow: inset 0 -0.7em 0 -0.40em rgba(0,0,0,0.17);
+    border-radius: 3em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.9em 3em;
+    margin: 0 0.4em 1em 0;
+    text-transform: uppercase;
+    font-weight: 400px;
+    color: white;
+    text-align: center;
+    max-height: 300px;
+    max-width: 300px;
+}
+#atrasBtn{
+    float: left;
+    margin-left: 10%;
+}
+
+@media (max-width:480px) {
+    h1 { 
+        font-size: 3em;
+    }
+    h2 { 
+        font-size: 1.8em; 
+    }
+    h3 { 
+        font-size: 1.5em; 
+    }
+    td:first-child { 
+        white-space: normal; 
+    }
+}
+
+.inline-code { 
+    padding: 1px 5px; 
+    background: #eee; 
+    border-radius: 2px; 
+}
+
+/* required snapPuzzle styles */
+.snappuzzle-wrap { 
+    position: relative; 
+    display: block; 
+}
+.snappuzzle-pile { 
+    position: relative; 
+}
+.snappuzzle-piece { 
+    cursor: move; 
+}
+.snappuzzle-slot { 
+    position: absolute; 
+    background: #fff; 
+    opacity: .8; 
+}
+.snappuzzle-slot-hover { 
+    background: #eee; 
+}

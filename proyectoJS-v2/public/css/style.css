@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700|Kranky');
+
+body { 
+    background-image: url(/images/wallpaper.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title{
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+    width: 85%;
+    padding: 8%;
+    color:mediumvioletred; 
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 90px;   
+}
+
+#game-button { 
+    background-color:#3369ff;
+    display:inline-block;
+    box-shadow:inset 0 -0.8em 0 -0.50em rgba(0,0,0,0.17);
+    border-radius:3em;
+    box-sizing: border-box;
+    padding:0.2em 2em;
+    margin: 4%;
+    text-align:center;
+    color: white;
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
+    position:relative; 
+    max-height:200px ;
+    max-width:300px;
+    text-align: center;
+}
+
+#avatar-container{
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+    margin-top: 5%;
+}
+
+#arrows {
+    background-color: transparent;
+    border: solid 0;
+    padding: 3%;    
+}
+
+.regresar{
+    position: relative;
+    padding: 350px 0 250px 0;
+    float: right;
+    font-family: 'Gaegu', cursive;
+    font-size: 200%;
+}
+
+.intro{
+    padding: 50% 5px;
+}
+
+h3{
+    color: dimgray;
+    font-size: 40px;
+}
+
+
+.fondo{
+    width: 640px; 
+    height: 407px;
+    position: fixed;
+    float: right;
+    opacity: 0.2;
+}
+.day {
+    border: 5px dashed transparent;
+    background: #ddd;
+    position: relative;
+}
+.day.hovering {
+    background: #b6d6fb;
+    border-color: #276cbc;
+}
+
+#game-button-back { 
+    background-color:green;
+    display:inline-block;
+    box-shadow:inset 0 -0.7em 0 -0.40em rgba(0,0,0,0.17);
+    border-radius:3em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color: white;
+    text-align:center; 
+    padding:10px;
+    width: 23%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+a:link 
+{ 
+text-decoration:none; 
+}
+
+
+
+#e1 {
+width : 40px;
+height : 40px;
+background : black;
+position: absolute;
+z-index: 1000;
+}
+
+#t1, #t2, #t3, #t4, #t5, #t6, #t7, #t8, #t9 {
+width : 40px;
+height : 40px;
+border-style: dotted;
+position: absolute;
+}
+
+.container-fluid{
+margin: auto;
+display: block;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 735px;
+    overflow: hidden;
+    overflow-y: hidden;
+
+}
+/*fichas del rompecabezas*/
+#elementos div{
+width : 214px;
+height : 136px;
+position: absolute;
+z-index: 1000;
+
+
+}
+#elementos {
+height: 200px;
+width: 300px;
+background: none !important;
+position: relative;
+}
+
+#tablero div{
+width : 214px;
+height : 136px;
+background :black;
+position: absolute;
+border-style: dotted 1px;
+
+}
+#tablero {
+background: lightcyan;
+position: relative;
+text-align: center;
+
+}
+
+.triangulo{
+position: absolute;
+}
+.rectangulo{
+position: absolute;
+}
+.cuadrado{
+position: absolute;
+}
+
+
+
+
+
+
+
+
+} 
+#elementos {
+background: white;
+position: relative;
+}
+.tablero {
+height: 100vh;
+background: red;
+position: relative;
+}
+
+@media (min-width: 425px, max-width: 768px){
+.container-fluid {
+display: block;
+position: absolute;
+height: 407px;
+left: -4px;
+}
+.fondo{
+position: absolute;
+left: -125px;
+top: 5px;
+}
+.container{
+padding: 100px 0 0 0;
+position: relative;
+left: 50%;
+}
+}
+
+@media (min-width: 768px, max-width: 1440px){
+.container-fluid {
+display: block;
+position: absolute;
+height: 407px;
+left: -4px;
+}
+.fondo{
+position: absolute;
+left: -125px;
+top: 5px;
+}
+.container{
+padding: 100px 0 0 0;
+position: relative;
+left: 50%;
+}
+}
+@media (min-width: 1440px){
+.container-fluid {
+display: block;
+position: absolute;
+height: 750px;
+}
+.fondo{
+position: absolute;
+left: -125px;
+top: 5px;
+}
+.container{
+padding: 100px 0 0 0;
+position: relative;
+left: 0%;
+}
+    
+
+    
+}

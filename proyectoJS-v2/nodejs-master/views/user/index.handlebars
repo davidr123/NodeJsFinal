@@ -1,0 +1,22 @@
+<div class="row">
+<h1> DATABASE: TABLE {{title}} </h1>
+</div>
+
+<div class="row">
+<a href="/user/new" type="button" class="btn btn-default btn-warning" >Nuevo</a>
+</div>
+<div class="row pt-md-5"></div>
+
+{{#each objUsuarios}}
+  <div class="row">
+    <div class="col-4 col-sm-1"><a href='/user/{{id}}'>{{nombre}}</a></div>
+    <div class="col-4 col-sm-1"><a type="button" class="btn btn-default btn-danger" href='/user/{{id}}/edit'>editar</a></div>
+    <div class="col-4 col-sm-1">
+      <form action='/user/{{id}}?_method=DELETE' method='post'>
+        <button type="submit" class="btn btn-default btn-danger">borrar</button>            
+      </form>
+    </div>
+    <div class="col-6 col-sm-9"></div>
+  </div>
+{{/each}}
+  

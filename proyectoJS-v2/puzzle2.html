@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rompecabezas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="Shortcut Icon" href="/images/puzzle-icon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/pure-min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/grids-responsive-min.css">
+        <link rel="stylesheet" href="public/css/estilo.css">
+    </head>
+    <body class="juego">
+        <div style="max-width:900px;padding:0 10px;margin:40px auto;text-align:center">
+            <div id="title"> Rompecabezas </div>
+        </div>
+        
+        <div id="puzzle-containment" style="margin:30px 0;padding:10px;text-align:center">
+            <div class="pure-g" style="max-width:1280px;margin:auto">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <div id="pile" style="margin:10px">
+                        <div id="puzzle_solved" style="display:none;text-align:center;position:relative;top:25%">
+                            <h2 style="margin:0 0 20px; color:mediumvioletred; font-family: 'Dokdo', cursive; font-size: 45px;">Bien hecho!</h2>
+                            <a class="pure-button button-lg restart-puzzle btnRestart">Jugar de nuevo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <div style="margin:10px">
+                        <img id="source_image" class="pure-img" src="images/dora.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="atrasBtn">
+            <div class="game-button">
+                <a href="juegos.html"> <img src="images/regresar.png" width="165px"> </a>
+            </div>
+        </div>
+        <div id="puzzle-points">
+            <div id="puntaje">
+                <h3> Puntaje: &nbsp; <strong id="puntaje"> </strong> </h3> 
+            </div>
+            <!--<div id="intentos">
+                <h3> Intentos: </h3>
+            </div>!-->
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="Js/jquery.snap-puzzle.js"> </script>
+        <script src="Js/main.js"> </script>
+         
+    </body>
+</html>
